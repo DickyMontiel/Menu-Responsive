@@ -1,0 +1,90 @@
+@font-face{
+    font-family: 'SanFranciscoPro';
+    src: url('SanFranciscoPro.ttf') ;
+}
+
+*{
+    font-family: 'SanFranciscoPro';
+}
+
+body{
+    background: #f7f7f7;
+    margin: 0px;
+}
+
+#vzads{
+    display:none !important;
+}
+
+#imgsHeader img{
+    height: 40px;
+}
+
+header{
+    background: rgb(53, 53, 53);
+}
+
+#imgsHeader #logoPrincipal{
+    display: inline-block;
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+    font-size: 20.5px;
+}
+
+@media only screen and (min-width: 701px){
+    header{
+        padding: 5px;
+    }
+
+    header a{
+        padding: 5px;
+    }
+
+    header a:hover{
+        text-decoration: underline;
+    }
+
+    #plusImg{
+        display: none;
+    }
+
+    #imgsHeader{
+        display: inline-block;
+    }
+
+    #divResponsive{
+        float: right; 
+        line-height: 40px;
+    }
+}
+
+@media only screen and (max-width: 700px){
+    #imgsHeader{
+        padding: 5px;
+        border-bottom: solid white;
+    }
+
+    #imgsHeader #plusImg{
+        display: inline-block;
+    }
+
+    #plusImg{
+        float: right;
+        margin: 4px;
+    }
+
+    #divResponsive{
+        text-align: center;
+        display: none;
+        padding: 5px;
+        padding-bottom: 10px;
+    }
+
+    header a{
+        display: block;
+        padding: 3px;
+    }
+}
